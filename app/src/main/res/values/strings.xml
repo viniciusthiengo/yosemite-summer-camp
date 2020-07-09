@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">
+        Yosemite Summer Camp
+    </string>
+
+    <string name="new_itinerary">
+        Criar um novo itinerário
+    </string>
+
+    <string name="activity_schedule">
+        Escolha as atividades que você adicionará
+        à sua agenda de acampamento de verão.
+    </string>
+
+    <string name="tourist">
+        Ícone turista
+    </string>
+
+    <string name="item_selected">
+        Ícone item selecionado
+    </string>
+
+    <string name="button_continue">
+        Continuar
+    </string>
+</resources>

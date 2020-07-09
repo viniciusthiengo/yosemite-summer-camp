@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/new_itinerary"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:drawableStart="@drawable/ic_tourist"
+        android:drawableLeft="@drawable/ic_tourist"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorMediumGrey"
+        android:text="@string/activity_schedule"
+        android:textColor="@color/colorMediumGrey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_menu_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp" />
+
+        <!--
+            A View abaixo faz o papel de "fade" ao topo do
+            FrameLayout, para que os itens em RecyclerView
+            tenham a aparência de que estão "saindo ou
+            entrando aos poucos" em tela e não de maneira
+            abrupta.
+        -->
+        <View
+            style="@style/AppTheme.Shadow"
+            android:layout_gravity="top" />
+
+        <!--
+            A View abaixo faz o mesmo papel de "fade de lista"
+            da View acima.
+
+            Porém devido aos atributos android:rotation="180"
+            e android:layout_gravity="bottom" o fade é no
+            fundo do FrameLayout.
+        -->
+        <View
+            style="@style/AppTheme.Shadow"
+            android:layout_gravity="bottom"
+            android:rotation="180" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMediumGrey"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/button_continue"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="25dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="21dp"
+            app:cardCornerRadius="@dimen/card_view_radius"
+            app:cardElevation="12dp">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                android:tint="@color/colorDarkPurple" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/vv_gradient"
+            style="@style/AppTheme.Shadow"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:elevation="13dp" />
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="top|end"
+            android:contentDescription="@string/item_selected"
+            android:elevation="14dp"
+            android:src="@drawable/ic_selected" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorDarkGrey"
+        android:textStyle="bold" />
+</LinearLayout>

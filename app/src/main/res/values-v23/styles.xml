@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Configuração extra de tema que será aplicada somente
+        em aparelhos com o Android 23 (Marshmallow) ou superior.
+    -->
+    <style
+        name="AppTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--
+            Coloca a StatusBar com fundo branco e ícones em
+            um tom, de cinza escuro.
+        -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

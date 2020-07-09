@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ItineraryActivity">
+
+    <!--
+        O app:elevation="0dp" faz com que a barra de topo
+        não tenha uma sombra abaixo dela.
+
+        Exatamente como definido no protótipo estático.
+    -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <!--
+            A definição android:theme="@style/AppTheme.ToolbarTheme"
+            tem o código para mudar a cor do ícone button que está
+            no lado esquerdo da barra de topo.
+
+            A definição app:navigationIcon="@drawable/ic_yosemite"
+            coloca em barra de topo, mais precisamente no lado
+            esquerdo dela, o ícone personalizado do aplicativo.
+
+            Exatamente como definido no protótipo estático.
+        -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.ToolbarTheme"
+            app:navigationIcon="@drawable/ic_yosemite"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_itinerary" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
