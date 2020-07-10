@@ -4,7 +4,7 @@ Projeto Kotlin Android da segunda parte do "artigo aula" [Porque e Como Utilizar
 
 Artigo que apresenta passo a passo todo o trabalho com gráficos (imagens) vetoriais em aplicativos Android.
 
-Também são abordadas dicas essenciais como: o "problema" com a API de suporte de vetores (para versões do Android abaixo da API 21 - Lollipop) e o porquê de evita-la
+Também são abordadas dicas essenciais como: o "problema" com a API de suporte de vetores (para versões do Android abaixo da API 21 - Lollipop) e o porquê de evita-la.
 
 <img src="https://www.thiengo.com.br/img/post/normal/lllpfgu2d49n6p37uh386ls8s4a2504c0e651daed1194c672762226c7a.jpg" height="590" alt="Aplicativo Android Yosemite Summer Camp - Para testes com a API de vetores">
 
